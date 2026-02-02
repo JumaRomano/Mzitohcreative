@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mzitoh Creatives | Premium Digital & Creative Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body {
+            font-family: 'Plus+Jakarta+Sans', sans-serif;
+            background-color: #fafaf9;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #fef3c7, transparent),
+                        radial-gradient(circle at bottom left, #ecfdf5, transparent);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Using the uploaded logo file -->
+                <img src="COMPANY LOGO.jpeg" alt="Mzitoh Creatives Logo" class="h-12 w-auto rounded" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="hidden h-10 w-10 items-center justify-center bg-black rounded-lg">
+                    <span class="text-white font-bold text-xl">M</span>
+                </div>
+                <span class="font-bold text-xl tracking-tighter uppercase">MZITOH CREATIVES</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-semibold text-xs uppercase tracking-widest">
+                <a href="#services" class="hover:text-amber-600 transition">Services</a>
+                <a href="#projects" class="hover:text-amber-600 transition">Portfolio</a>
+                <a href="#offer" class="text-amber-600 font-bold">February Offer</a>
+            </div>
+            <a href="https://wa.me/254743991192" class="bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition shadow-lg shadow-black/10">
+                Work With Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-40 pb-24 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <div class="inline-block bg-white border border-amber-200 text-amber-700 px-4 py-1.5 rounded-full text-[10px] font-black mb-6 tracking-[0.2em] uppercase">
+                    ✨ Elevating Brands in 2026
+                </div>
+                <h1 class="text-6xl md:text-7xl font-extrabold leading-[1.1] mb-8">
+                    Creative <span class="text-amber-600">Vision</span>, Technical Precision.
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed">
+                    We combine high-end <strong>Photography</strong>, bold <strong>Graphic Design</strong>, and scalable <strong>Web Engineering</strong> to build brands that dominate the Kenyan market.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#offer" class="bg-black text-white px-10 py-4 rounded-2xl font-bold text-center hover:bg-slate-800 transition-all transform hover:-translate-y-1">Claim Feb Offer</a>
+                    <a href="#projects" class="bg-white border-2 border-slate-100 px-10 py-4 rounded-2xl font-bold text-center hover:bg-slate-50 transition">View Portfolio</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-[2.5rem] shadow-2xl overflow-hidden border-[12px] border-white rotate-2">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200" alt="Tech & Creative Workspace" class="w-full h-[500px] object-cover">
+                </div>
+                <!-- Floating Elements -->
+                <div class="absolute top-10 -right-4 bg-white p-4 rounded-2xl shadow-xl animate-bounce">
+                    <i class="fas fa-camera text-amber-600 text-2xl"></i>
+                </div>
+                <div class="absolute bottom-20 -left-10 bg-white p-6 rounded-2xl shadow-2xl flex items-center space-x-4">
+                    <div class="h-12 w-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-600">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div>
+                        <p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Websites</p>
+                        <p class="text-md font-bold italic">TopTimeShop.co.ke</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-xs font-black text-amber-600 uppercase tracking-[0.3em] mb-4">What We Do</h2>
+            <h3 class="text-4xl font-extrabold text-slate-900">Comprehensive Creative Services</h3>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Website Gig focus -->
+            <div class="service-card bg-white p-10 rounded-[2rem] transition-all duration-300">
+                <div class="h-16 w-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 text-2xl">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Web Development</h4>
+                <p class="text-slate-500 leading-relaxed mb-6">High-speed, SEO-optimized websites built for conversion. From E-commerce to corporate landing pages.</p>
+                <ul class="text-sm space-y-3 text-slate-700 font-medium">
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> E-commerce (Shopify/Custom)</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Cloud Hosting (AWS/Firebase)</li>
+                    <li><i class="fas fa-check text-blue-500 mr-2"></i> Monthly Maintenance</li>
+                </ul>
+            </div>
+
+            <!-- Photography -->
+            <div class="service-card bg-white p-10 rounded-[2rem] transition-all duration-300 border-2 border-amber-100">
+                <div class="h-16 w-16 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center mb-8 text-2xl">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Photography</h4>
+                <p class="text-slate-500 leading-relaxed mb-6">Professional product photography and corporate shoots that capture the essence of your brand.</p>
+                <ul class="text-sm space-y-3 text-slate-700 font-medium">
+                    <li><i class="fas fa-check text-amber-500 mr-2"></i> Product Photography</li>
+                    <li><i class="fas fa-check text-amber-500 mr-2"></i> Event Coverage</li>
+                    <li><i class="fas fa-check text-amber-500 mr-2"></i> Professional Editing</li>
+                </ul>
+            </div>
+
+            <!-- Graphic Design -->
+            <div class="service-card bg-white p-10 rounded-[2rem] transition-all duration-300">
+                <div class="h-16 w-16 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-8 text-2xl">
+                    <i class="fas fa-pen-nib"></i>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Graphic Design</h4>
+                <p class="text-slate-500 leading-relaxed mb-6">Visual identities, logos, and marketing materials that make your business stand out from the crowd.</p>
+                <ul class="text-sm space-y-3 text-slate-700 font-medium">
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Brand Identity / Logos</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Social Media Graphics</li>
+                    <li><i class="fas fa-check text-purple-500 mr-2"></i> Print & Marketing Ads</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4 italic">Recent Deployments</h2>
+                    <p class="text-slate-500">Live projects driving revenue for Kenyan entrepreneurs.</p>
+                </div>
+                <div class="text-right hidden md:block">
+                    <span class="text-6xl font-black text-slate-50/50 uppercase select-none">Impact</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Project 1: TopTimeShop -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-slate-100 aspect-video mb-6 shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1200" alt="TopTimeShop" class="object-cover w-full h-full group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-white text-3xl font-bold mb-2">TopTimeShop</h3>
+                            <a href="https://toptimeshop.co.ke/" target="_blank" class="text-amber-400 font-bold flex items-center hover:underline">
+                                toptimeshop.co.ke <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-slate-500 text-sm px-2">E-commerce deployment featuring real-time inventory and seamless mobile checkout for Kenyan shoppers.</p>
+                </div>
+
+                <!-- Project 2: AlphaVeggies -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-[2rem] bg-slate-100 aspect-video mb-6 shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=1200" alt="AlphaVeggies" class="object-cover w-full h-full group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-8 left-8">
+                            <h3 class="text-white text-3xl font-bold mb-2">AlphaVeggies</h3>
+                            <a href="https://alphaveggies.com/" target="_blank" class="text-amber-400 font-bold flex items-center hover:underline">
+                                alphaveggies.com <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-slate-500 text-sm px-2">Supply chain optimization for the agricultural sector, connecting farms directly to urban kitchens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- February Offer Section -->
+    <section id="offer" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-black rounded-[3rem] p-12 md:p-20 text-white relative overflow-hidden shadow-2xl">
+                <div class="relative z-10 grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <div class="bg-amber-600 text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded inline-block mb-6">
+                            Limited February Offer
+                        </div>
+                        <h2 class="text-5xl font-black mb-6 leading-tight">Scale Your Business This Month.</h2>
+                        <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+                            Don't just launch a website—launch a brand. Our Feb package includes <strong>Custom Design + Cloud Hosting + Professional Photography</strong> session for your top 5 products.
+                        </p>
+                        <div class="flex items-center space-x-6 mb-10">
+                            <div class="text-4xl font-bold">KES 24,999/-</div>
+                            <div class="text-slate-500 line-through text-xl">KES 55,000</div>
+                        </div>
+                        <p class="text-xs font-bold text-amber-500 uppercase tracking-widest">
+                            *Only 2 Slots Left for February Bookings
+                        </p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-[2rem] border border-white/10">
+                        <h4 class="text-xl font-bold mb-6">Package Includes:</h4>
+                        <ul class="space-y-4 text-slate-300">
+                            <li><i class="fas fa-check-circle text-amber-500 mr-3"></i> Fully Responsive Website (React/HTML5)</li>
+                            <li><i class="fas fa-check-circle text-amber-500 mr-3"></i> 1 Year Hosting + Domain Name</li>
+                            <li><i class="fas fa-check-circle text-amber-500 mr-3"></i> 10 High-Res Product Photos</li>
+                            <li><i class="fas fa-check-circle text-amber-500 mr-3"></i> Professional Logo Design (2 Options)</li>
+                        </ul>
+                        <a href="https://wa.me/254743991192" class="mt-10 block w-full bg-amber-600 py-4 rounded-xl text-center font-black text-lg hover:bg-amber-500 transition shadow-lg shadow-amber-600/20">
+                            Book February Slot
+                        </a>
+                    </div>
+                </div>
+                <!-- Abstract BG -->
+                <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-600 rounded-full blur-[120px] opacity-20"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-10 md:space-y-0">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <img src="COMPANY LOGO.jpeg" alt="Logo" class="h-16 w-auto mb-4 rounded" onerror="this.style.display='none'">
+                    <h3 class="text-2xl font-black tracking-tighter uppercase">MZITOH CREATIVES</h3>
+                    <p class="text-slate-400 text-sm mt-2">Design. Development. Deployment.</p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-10 text-center md:text-left">
+                    <div>
+                        <h5 class="font-bold text-xs uppercase tracking-widest mb-4">Focus</h5>
+                        <ul class="text-slate-500 text-sm space-y-2">
+                            <li>Websites</li>
+                            <li>E-commerce</li>
+                            <li>Cloud Architecture</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-xs uppercase tracking-widest mb-4">Creative</h5>
+                        <ul class="text-slate-500 text-sm space-y-2">
+                            <li>Photography</li>
+                            <li>Graphic Design</li>
+                            <li>Branding</li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <h5 class="font-bold text-xs uppercase tracking-widest mb-4">Connect</h5>
+                        <div class="flex space-x-4">
+                            <a href="https://wa.me/254743991192" class="h-10 w-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-black hover:text-white transition"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-black hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="h-10 w-10 rounded-full bg-slate-100 flex items-center justify-center hover:bg-black hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 pt-8 border-t border-slate-50 text-center">
+                <p class="text-slate-300 text-[10px] font-bold uppercase tracking-[0.2em]">© 2026 Mzitoh Creatives — Built in Nairobi</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
